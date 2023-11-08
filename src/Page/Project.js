@@ -9,7 +9,7 @@ import weather from "../image/weather-app.png";
 import shopping from "../image/shopping-website.png";
 import movie from "../image/movie-website.png";
 import portfolio from '../image/portfolio.png'
-import guest from '../image/guest_book.png'
+import guest from '../image/guest_book.png';
 import Coffee from "../Component/Detail/Coffee";
 import Number from "../Component/Detail/Number";
 import Iphone from "../Component/Detail/Iphone";

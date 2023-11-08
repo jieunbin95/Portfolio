@@ -29,15 +29,15 @@ const Resume=({setOpenModal}) => {
           Description
         </div>
         <p>
-        개인 포트폴리오 웹페이지 입니다.
+        Home, About, Portfolio로 구성한 개인 포트폴리오 웹페이지 입니다. 
         </p>
         <div className='detail_skill'>
           <FontAwesomeIcon icon={faCheck}/>
           Use Skill
         </div>
         <p className='skill'>  React  <span style={{margin:'0 30px 0'}}>React-hook</span> Styled-component </p>
-        <div><FontAwesomeIcon icon={faCheck} /><a href='https://clinquant-kataifi-9513a8.netlify.app/'>Demo-Site</a></div>
-        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/Up-Down-Game'>Source Code</a></div>
+        <div><FontAwesomeIcon icon={faCheck} /><a href='https://bucolic-kashata-48de69.netlify.app/'>Demo-Site</a></div>
+        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/Portfolio'>Source Code</a></div>
         </Col>  
       </Row>
     </Container>

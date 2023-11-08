@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark,faCheck } from '@fortawesome/free-solid-svg-icons'
 import useOnClickOutside from '../../hook/useOnClickOutside'
-import guest from '../../image/guest_book.png'
 import { Col, Row } from 'react-bootstrap'
 
 const Airbnb = ({setOpenModal}) => {
@@ -20,7 +19,9 @@ const Airbnb = ({setOpenModal}) => {
       <Row>  
         <Col>
         <h3>Guest-Book</h3>
-        <img alt='guest_book' src={guest}/>
+        <video style={{width:'100%', height:'100%'}} autoPlay muted loop>
+          <source src='/video/guest.mp4'/>
+        </video>
         </Col>
 
         <Col className='detail_text'>
@@ -36,7 +37,7 @@ const Airbnb = ({setOpenModal}) => {
           Use Skill
         </div>
         <p className='skill'> Javascript  <span style={{margin:'0 30px 0'}}>Next.js</span></p>
-        <div><FontAwesomeIcon icon={faCheck} /><a href='https://github.com/jieunbin95/guest_book'>Demo-Site</a></div>
+        
         <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/guest_book'>Source Code</a></div>
         </Col>  
       </Row>
@@ -81,7 +82,7 @@ const Container=styled.div`
     background: linear-gradient(to top, #ddbdd5 60%, transparent 40%); 
   }
 
-  img{
+  .img{
     width:500px;
     margin:10px 10px 0;
   }

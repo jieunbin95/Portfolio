@@ -30,7 +30,7 @@ const Movie_disney = ({setOpenModal}) => {
         </div>
         <p>
         React를 활용한 디즈니 플러스 클론코딩입니다. Axios를 통해 API를 호출하여 영화정보를 랜더링하였고,
-        Firebase 인증기능을 사용하여 계정생성, 로그인, 로그아웃을 구현하였습니다.
+        Redux Toolkit을 사용하여 Redux 개발환경을 구축하였습니다. 또한 Firebase 인증기능을 사용하여 계정생성, 로그인, 로그아웃을 구현하였습니다.
         </p>
         <div className='detail_skill'>
           <FontAwesomeIcon icon={faCheck}/>
@@ -40,13 +40,13 @@ const Movie_disney = ({setOpenModal}) => {
         <li>React</li>
         <li>React-hook</li>
         <li>React-router</li>
-        <li>Styled-Components</li>
+        <li>Redux-toolkit</li>
         <li>Fire-base</li>
+        <li>Styled-Components</li>
         <li>Axios</li>
-        <li>Swiper</li>
         </ul>
         <div><FontAwesomeIcon icon={faCheck} /><a href='https://react-disney-plus-website.firebaseapp.com/'>Demo-Site</a></div>
-        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/react-disney-website'>Source Code</a></div>
+        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/react-disney-website/tree/master'>Source Code</a></div>
         </Col>  
       </Row>
     </Container>
