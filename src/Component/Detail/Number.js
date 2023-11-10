@@ -57,12 +57,13 @@ const Container=styled.div`
   transition: .2s;
 
   .close-btn{
-    text-align:end;
-    width:30px;
-    height:30px;
-    right:0;
-    position:absolute;
-    transition:.5s;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    transition: 0.5s;
 
     &:hover{
       color:rgba(0, 128, 0, 0.586);

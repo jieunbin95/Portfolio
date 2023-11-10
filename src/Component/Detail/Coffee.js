@@ -76,7 +76,8 @@ const Container = styled.div`
     text-align: end;
     width: 30px;
     height: 30px;
-    right: 0;
+    right: 10px;
+    top: 10px;
     position: absolute;
     transition: 0.5s;
 
