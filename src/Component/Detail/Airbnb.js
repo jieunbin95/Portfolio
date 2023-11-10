@@ -13,13 +13,13 @@ const Airbnb = ({setOpenModal}) => {
 
   return (
     <Container ref={ref}>
-      <div className='close-btn' >
-          <FontAwesomeIcon icon={faXmark} onClick={() => setOpenModal(false)} className='icon'/>
+      <div className='close-btn' onClick={() => setOpenModal(false)}>
+          <FontAwesomeIcon icon={faXmark} className='x-icon'/>
       </div>
       <Row>  
         <Col>
         <h3>Guest-Book</h3>
-        <video style={{width:'100%', height:'100%'}} autoPlay muted loop>
+        <video className='video' autoPlay muted loop>
           <source src='/video/guest.mp4'/>
         </video>
         </Col>
@@ -82,9 +82,9 @@ const Container=styled.div`
     background: linear-gradient(to top, #ddbdd5 60%, transparent 40%); 
   }
 
-  .img{
-    width:500px;
-    margin:10px 10px 0;
+  .video{
+    width:100%;
+    height:100%;
   }
 
   .detail_text{
@@ -123,7 +123,43 @@ const Container=styled.div`
       color:rgba(0, 128, 0, 0.586);
      }
     }
+  }
 
+  @media (max-width:900px){
+    position: absolute;
+    top:0;
+    width: 580px;
+    background-color:white;
+    height:600px;
+
+    .close-btn{
+      top:20px;
+      right:10px;
+      text-align:center;
+
+      &:hover{
+        color:rgba(0, 128, 0, 0.586);
+      }
+  
+      .x-icon{
+        font-size:20px;
+      }
+    }
+
+    .video{
+      width:0;
+    }
+
+    .detail_text{
+      height: 600px;
+      position: absolute;
+      width: 90%;
+      left: 10px;
+
+      p{
+        border-top:0;
+      }
+    }
   }
 
 `

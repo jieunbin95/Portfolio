@@ -20,18 +20,6 @@ body::after{
   z-index: -1;
 }
 
-
-.main{
-  position: relative;
-  margin: auto;
-  line-height: 10px;
-  background-color: #f8f9fa;
-  width: 90%;
-  height: 43.75em;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 12px 12px 5px rgba(119, 119, 118, 0.2);;
-}
-
 .legal{
   display: flex;
   justify-content: center;
@@ -42,4 +30,15 @@ body::after{
   color: rgb(160, 158, 158);
   user-select: none;
   font-size: 0.938rem;
+}
+
+@media (max-width:900px){
+
+  body::after{
+    width: 0;
+    height: 0;
+  }
+
+  .copyright{
+    color: rgb(169, 167, 167);}
 }

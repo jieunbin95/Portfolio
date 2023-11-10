@@ -14,11 +14,10 @@ const Fashion = ({ setOpenModal }) => {
 
   return (
     <Container ref={ref}>
-      <div className="close-btn">
+      <div className="close-btn" onClick={() => setOpenModal(false)}>
         <FontAwesomeIcon
-          icon={faXmark}
-          onClick={() => setOpenModal(false)}
-          className="icon"
+          icon={faXmark}      
+          className="x-icon"
         />
       </div>
       <Row>
@@ -78,7 +77,8 @@ const Container = styled.div`
     text-align: end;
     width: 30px;
     height: 30px;
-    right: 0;
+    right: 10px;
+    top: 10px;
     position: absolute;
     transition: 0.5s;
 
@@ -86,7 +86,7 @@ const Container = styled.div`
       color: rgba(0, 128, 0, 0.586);
     }
 
-    .icon {
+    .x-icon {
       font-size: 20px;
     }
   }
@@ -140,6 +140,44 @@ const Container = styled.div`
 
       &:hover {
         color: rgba(0, 128, 0, 0.586);
+      }
+    }
+  }
+
+
+  @media (max-width:900px){
+    position: absolute;
+    top:0;
+    width: 580px;
+    background-color:white;
+    height:600px;
+
+    .close-btn{
+      top:20px;
+      right:10px;
+      text-align:center;
+
+      &:hover{
+        color:rgba(0, 128, 0, 0.586);
+      }
+  
+      .x-icon{
+        font-size:20px;
+      }
+    }
+
+    img{
+      width:0;
+    }
+
+    .detail_text{
+      height: 600px;
+      position: absolute;
+      width: 90%;
+      left: 10px;
+
+      p{
+        border-top:0;
       }
     }
   }

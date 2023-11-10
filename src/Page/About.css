@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+
+.info{
+  height: 32em;
+  display: flex;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.info_img{
+  width: 60%;
+}
+
+.info_about{
+  height: 30em;
+  width: 80%;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.info_name,
+.info_num,
+.info_email{
+  font-family: 'Song Myung', serif;
+  font-size: 20px;
+  margin-top: 0.938em;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+}
+
+.info_email{
+  margin-bottom: 0.938em;
+}
+
+span{
+  margin-left: 0.313em;
+}
+
+.info_about2{
+  margin: 0.938em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.certificates{
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.938em;
+}
+
+.info_certificates{
+  font-family: 'Song Myung', serif;
+  font-weight: 700;
+  margin: 0.625em 0;
+  font-size: 17px;
+}
+
+/* .about_icon{
+  margin-top: 0.938em;
+} */
+
+.github,
+.v-log{
+  font-size: 35px;
+  margin-right: 1.250em;
+  color: black;
+  transition: color .5s;
+}
+
+.github:hover{
+  color: rgb(240, 140, 33);
+}
+
+.v-log:hover{
+  color: rgb(101, 238, 172);
+}
+
+@media (max-width:900px){
+  .info{
+    height: 720px;
+    
+  }
+
+  .info_img{
+    display: none;
+  }
+
+  .info_about{
+    height: 38em;
+    width: 90%;
+    line-height: 1.2;
+    padding-right: 0;
+    margin: 0 auto;
+    
+  }
+  
+  .info_name,
+  .info_num,
+  .info_email{
+    font-size: 20px;
+    margin-top: 1em;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 700;
+  }
+
+  .info_email{
+    
+  }
+}

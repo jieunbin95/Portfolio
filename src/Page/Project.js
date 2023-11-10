@@ -145,15 +145,31 @@ export default Project;
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 180px;
+  grid-auto-rows: 170px;
   width: 1100px;
-  margin: 10px auto 0;
+  margin: 0 auto 0;
+
+  @media (max-width:900px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 117px;
+    width: 600px;
+    margin: 0 auto 0;
+    border-right: 2px solid #ddbdd58a;
+    border-left: 2px solid #ddbdd58a;
+    
+  }
 `;
 
 const Item = styled.div`
   width: 250px;
   position: relative;
   transition: 1s;
+
+  img {
+    width: 250px;
+    height:160px;
+    position: absolute;
+  }
 
   &:hover img{
     transition: 1s;
@@ -167,10 +183,25 @@ const Item = styled.div`
     visibility: visible;
   }
 
-  img {
-    width: 250px;
-    height:160px;
-    position: absolute;
+
+  @media (max-width:900px){
+    width:300px;
+    height:150px;
+
+    img{
+      opacity:0;
+      visibility: hidden;
+    }
+
+    .item{
+      opacity:1;
+      visibility: visible;
+      position: relative;
+      width: 250px;
+      height: 110px;
+      margin: 5px auto;
+    }
+
   }
 `;
 
@@ -187,7 +218,7 @@ const Title = styled.div`
   visibility: hidden;
 
   h3{
-    font-size:20px;
+    font-size:25px;
     text-align:center;
     border-bottom:1px solid white;
     font-weight:bold;
@@ -199,13 +230,26 @@ const Title = styled.div`
     left:0;
     background-size:200%;
     margin-top:10px;
-    padding:5px;
+    padding:10px;
     transition:.2s;
-    font-size:15px;
+    font-size:25px;
     font-weight:bold;
 
     &:hover{
       background-position:-100%;
-    }
+    }}
+
+  
+    @media (max-width:900px){
+
+      h3{
+        font-size:20px;
+        border-bottom:2px solid white;
+      }
+
+      button{
+        font-size:20px;
+        padding: 10px;
+      }
   }
 `;

@@ -1,15 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './Page/Home'
 import Project from './Page/Project'
+import Main from './Page/Main';
+import About from './Page/About';
+import Nav from './Component/Nav'
+
 
 function App() {
 
   return (
     <div>
+      <Nav/>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/About' element={<Project/>}></Route>
+        <Route path='/' element={<Main/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/project' element={<Project/>}></Route>
       </Routes>
 
       <div className='legal'>

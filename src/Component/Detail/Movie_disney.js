@@ -14,8 +14,8 @@ const Movie_disney = ({setOpenModal}) => {
 
   return (
     <Container ref={ref}>
-      <div className='close-btn' >
-          <FontAwesomeIcon icon={faXmark} onClick={() => setOpenModal(false)} className='icon'/>
+      <div className='close-btn' onClick={() => setOpenModal(false)}>
+          <FontAwesomeIcon icon={faXmark}  className='x-icon'/>
       </div>
       <Row>  
         <Col>
@@ -142,4 +142,51 @@ const Container=styled.div`
 
   }
 
+  @media (max-width:900px){
+    position: absolute;
+    top:0;
+    width: 580px;
+    background-color:white;
+    height:600px;
+
+    .close-btn{
+      top:20px;
+      right:10px;
+      text-align:center;
+
+      &:hover{
+        color:rgba(0, 128, 0, 0.586);
+      }
+  
+      .x-icon{
+        font-size:20px;
+      }
+    }
+
+    img{
+      width:0;
+    }
+
+    .detail_text{
+      height: 600px;
+      position: absolute;
+      width: 90%;
+      left: 10px;
+
+      p{
+        border-top:0;
+        height:35%
+      }
+
+      div{
+        margin-bottom:5px;
+      }
+
+      ul{
+        border-top:0;
+      }
+
+      
+    }
+  }
 `
