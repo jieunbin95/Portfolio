@@ -160,6 +160,7 @@ const Container=styled.div`
 
       p{
         border-top:0;
+        padding:5px 0;
       }
     }
   }

@@ -76,7 +76,7 @@
 
 /* main */
 .main_text{
-  height: 30em;
+  height: 25em;
 }
 
 p{
@@ -111,13 +111,14 @@ p{
   font-family: 'DM Serif Display', serif;
   font-size: 30px;
   display: inline-block;
-  margin: 30px 0;
+  margin: 25px 0;
+  line-height: 120%;
 }
 
 .checkbox img{
-  width: 60px;
-  height: 65px;
-  margin: 0  20px;
+  width: 50px;
+  height: 55px;
+  margin: 0  10px;
 }
 
 @media (max-width:900px){
@@ -128,6 +129,7 @@ p{
   p{
     width: 550px;
     margin:0 auto;
+    padding: 70px 0;
     font-size: 20px;
     line-height: 1.2;
     border-bottom: 1px solid #ddbdd5;
@@ -138,6 +140,7 @@ p{
   }
 
   .checkbox{
+    padding-top: 20px;
     text-align: center;
   }
 

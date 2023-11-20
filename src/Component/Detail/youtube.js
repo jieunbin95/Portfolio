@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark,faCheck } from '@fortawesome/free-solid-svg-icons'
 import useOnClickOutside from '../../hook/useOnClickOutside'
-import game from '../../image/up&down-app.png'
+import video from '../../image/youtube.png'
 import { Col, Row } from 'react-bootstrap'
 
-const Number=({setOpenModal}) => {
+const Youtube=({setOpenModal}) => {
   const ref=useRef(null)
   useOnClickOutside(ref,()=>{
     setOpenModal(false)
@@ -19,8 +19,8 @@ const Number=({setOpenModal}) => {
       </div>
       <Row>  
         <Col>
-        <h3>Up&Down-App</h3>
-        <img alt='Up&Down-App' src={game}/>
+        <h3>Youtube</h3>
+        <img alt='Youtube' src={video}/>
         </Col>
 
         <Col className='detail_text'>
@@ -29,23 +29,23 @@ const Number=({setOpenModal}) => {
           Description
         </div>
         <p>
-        Javascript에 좀 더 집중하여 만든 숫자 맞추기 웹사이트입니다.
-        원하는 기능의 로직을 작성하고, 작성한 로직에 따라 코드를 작성하였습니다.
+        Vite툴을 이용해 만든 Youtube클론 코딩입니다. mainPage, VideoPage, searchVideoPage로 구성되어있으며, 
+        axios, dayjs, react-icons, react-router-dom, tooltip, react-youtube, sass를 사용하였습니다
         </p>
         <div className='detail_skill'>
           <FontAwesomeIcon icon={faCheck}/>
           Use Skill
         </div>
-        <p className='skill'> HTML  <span style={{margin:'0 30px 0'}}>CSS</span> Javascript </p>
-        <div><FontAwesomeIcon icon={faCheck} /><a href='https://clinquant-kataifi-9513a8.netlify.app/'>Demo-Site</a></div>
-        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/Up-Down-Game'>Source Code</a></div>
+        <p className='skill'> Vite <span style={{margin:'0 30px 0'}}>SCSS</span> </p>
+        <div><FontAwesomeIcon icon={faCheck} /><a href='https://clinquant-crumble-647cd3.netlify.app/'>Demo-Site</a></div>
+        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/react-sass-youtube'>Source Code</a></div>
         </Col>  
       </Row>
     </Container>
   )
 }
 
-export default Number
+export default Youtube
 
 const Container=styled.div`
   position: absolute;
@@ -154,13 +154,14 @@ const Container=styled.div`
     }
 
     .detail_text{
-      height: 600px;
+      height: 500px;
       position: absolute;
       width: 90%;
       left: 10px;
 
       p{
         border-top:0;
+        padding:5px 0;
       }
     }
   }

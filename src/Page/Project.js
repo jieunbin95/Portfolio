@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import disney from "../image/disney-website.png";
 import starbucks from "../image/starbucks-website.png";
-import updown from "../image/up&down-app.png";
+import video from "../image/youtube.png";
 import ipad from "../image/ipad-website.png";
 import todolist from "../image/todolist-app.png";
 import weather from "../image/weather-app.png";
@@ -11,7 +11,7 @@ import movie from "../image/movie-website.png";
 import portfolio from '../image/portfolio.png'
 import guest from '../image/guest_book.png';
 import Coffee from "../Component/Detail/Coffee";
-import Number from "../Component/Detail/Number";
+import Youtube from "../Component/Detail/youtube";
 import Iphone from "../Component/Detail/Iphone";
 import Tomorrow from "../Component/Detail/Tomorrow";
 import Fashion from "../Component/Detail/Fashion";
@@ -24,7 +24,7 @@ import Movie_disney from "../Component/Detail/Movie_disney";
 
 const Project = () => {
   const [coffee,setCoffee]=useState(false)
-  const [number,setNumber]=useState(false)
+  const [youtube,setYoutube]=useState(false)
   const [iphone,setIphone]=useState(false)
   const [tomorrow,setTomorrow]=useState(false)
   const [sunny,setSunny]=useState(false)
@@ -47,16 +47,7 @@ const Project = () => {
 
       {coffee?<Coffee setOpenModal={setCoffee}/>:''}
 
-      <Item>
-        <img alt="updown" src={updown} />
-        <Title className='item'>
-          <h3>Up&Down-App</h3>
-          <button onClick={()=>setNumber(!number)}>Click</button>
-        </Title>
-      </Item>
-
-      {number?<Number setOpenModal={setNumber}/>:''}
-
+      
       <Item>
         <img alt="ipad" src={ipad} />
         <Title className='item'>
@@ -126,6 +117,18 @@ const Project = () => {
       </Item>
 
       {airbnb?<Airbnb setOpenModal={setAirbnb}/>:''}
+
+
+      <Item>
+        <img alt="youtube" src={video} />
+        <Title className='item'>
+          <h3>Youtube</h3>
+          <button onClick={()=>setYoutube(!youtube)}>Click</button>
+        </Title>
+      </Item>
+
+      {youtube?<Youtube setOpenModal={setYoutube}/>:''}
+
 
       <Item>
         <img alt="portfolio" src={portfolio} />
