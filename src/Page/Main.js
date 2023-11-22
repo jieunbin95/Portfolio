@@ -82,6 +82,7 @@ const Main = () => {
                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png" />
                       <img src="https://kimminseoung.github.io/PortFolio/static/media/styled-component.bc3e0b79498ffebf7bf8.png" />
                       <img src="https://logos-download.com/wp-content/uploads/2016/09/Sass_logo.png" />
+                      <img src="https://mui.com/static/logo.png" />
                     </div>
 
                     <div>
