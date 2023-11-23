@@ -79,7 +79,6 @@ const Main = () => {
                       <img src="https://blog.kakaocdn.net/dn/zglS0/btrvkHqDBrk/dRKgILYmxe5JR4Pz4Jj5lK/img.png" />
                       <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" />
                       <img src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png" />
                       <img src="https://kimminseoung.github.io/PortFolio/static/media/styled-component.bc3e0b79498ffebf7bf8.png" />
                       <img src="https://logos-download.com/wp-content/uploads/2016/09/Sass_logo.png" />
                       <img src="https://mui.com/static/logo.png" />
