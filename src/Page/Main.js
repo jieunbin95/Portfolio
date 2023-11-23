@@ -80,14 +80,22 @@ const Main = () => {
                       <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" />
                       <img src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png" />
                       <img src="https://kimminseoung.github.io/PortFolio/static/media/styled-component.bc3e0b79498ffebf7bf8.png" />
-                      <img src="https://logos-download.com/wp-content/uploads/2016/09/Sass_logo.png" />
                       <img src="https://mui.com/static/logo.png" />
                     </div>
 
-                    <div>
-                      <span className="text">DataBase.</span>
+                    <div className='last_checkbox'>
+                      <div className='checkbox_item'>
+                        <div className="checkbox_name"><span className="text">Tool.</span></div>
+                        <br/>
+                        <img src="https://logos-download.com/wp-content/uploads/2016/09/Sass_logo.png" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png" />
+                     </div>
+                      
+                      <div className='checkbox_item'>
+                        <div className="checkbox_name"><span className="text">DataBase.</span></div>
                       <br />
                       <img src="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png" />
+                      </div>
                     </div>
                   </div>
                 </Col>

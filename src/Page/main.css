@@ -121,6 +121,14 @@ p{
   margin: 0  10px;
 }
 
+.checkbox .last_checkbox{
+  display: flex;
+}
+
+.last_checkbox .checkbox_item{
+  width: 50%;
+}
+
 @media (max-width:900px){
   .main_text{
     height: 17em;
@@ -154,6 +162,15 @@ p{
     height: 30px;
     margin: 0  20px;
     right: 10px;
+  }
+
+  .checkbox .last_checkbox{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .last_checkbox .checkbox_item{
+    width: 30%;
   }
 }
 
