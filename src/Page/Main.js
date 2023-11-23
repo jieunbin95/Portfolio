@@ -73,7 +73,7 @@ const Main = () => {
                     </div>
 
                     <div>
-                      <span className="text">Library.</span>
+                      <span className="text">Library/Framework.</span>
                       <br />
                       <img src="https://kimminseoung.github.io/PortFolio/static/media/react.428839d4924b447d4d50.png" />
                       <img src="https://blog.kakaocdn.net/dn/zglS0/btrvkHqDBrk/dRKgILYmxe5JR4Pz4Jj5lK/img.png" />
