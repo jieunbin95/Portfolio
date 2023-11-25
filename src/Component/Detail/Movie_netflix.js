@@ -37,7 +37,6 @@ const Movie_netflix = ({setOpenModal}) => {
         </div>
         <ul> 
         <li>React</li>
-        <li>React-hook</li>
         <li>React-router</li>
         <li>Styled-Components</li>
         <li>Axios</li>
