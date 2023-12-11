@@ -19,7 +19,7 @@ const Iphone = ({setOpenModal}) => {
       </div>
       <Row>  
         <Col>
-        <h3>Ipad-Website</h3>
+        <h3>Apple-Website</h3>
         <img alt='iphone' src={phone}/>
         </Col>
 
@@ -47,13 +47,13 @@ const Iphone = ({setOpenModal}) => {
 export default Iphone
 
 const Container=styled.div`
-  position: absolute;
-  top:0;
-  width: 1100px;
-  background-color:white;
-  height:540px;
-  z-index:1;
-  transition: .2s;
+position: absolute;
+top:0;
+width: 990px;
+background-color:white;
+height:540px;
+z-index:1;
+transition: .2s;
 
   .close-btn{
     text-align: end;
@@ -130,9 +130,8 @@ const Container=styled.div`
   @media (max-width:900px){
     position: absolute;
     top:0;
-    width: 580px;
+    width: 89%;
     background-color:white;
-    height:600px;
 
     .close-btn{
       top:20px;
@@ -153,7 +152,7 @@ const Container=styled.div`
     }
 
     .detail_text{
-      height: 600px;
+      height: 500px;
       position: absolute;
       width: 90%;
       left: 10px;

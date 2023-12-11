@@ -81,6 +81,8 @@ const Main = () => {
                       <img src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png" />
                       <img src="https://kimminseoung.github.io/PortFolio/static/media/styled-component.bc3e0b79498ffebf7bf8.png" />
                       <img src="https://mui.com/static/logo.png" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" />
+
                     </div>
 
                     <div className='last_checkbox'>

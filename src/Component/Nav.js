@@ -13,17 +13,6 @@ const Nav = () => {
         </h1>
       </div>
 
-      <div className="sub_menu">
-        <div className="home">
-          <a href="#home">Home</a>
-        </div>
-        <div className="about">
-          <a href="#about">About</a>
-        </div>
-        <div className="portfolio">
-          <a href="#project">Project</a>
-        </div>
-      </div>
     </div>
   )
 }

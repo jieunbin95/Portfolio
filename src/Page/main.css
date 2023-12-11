@@ -5,7 +5,7 @@
   margin: auto; 
   line-height: 10px;
   background-color: #f8f9fa;
-  width: 95%;
+  max-width: 95%;
   height: 34.5rem;
   border-radius: 0 0 10px 10px;
   box-shadow: 12px 12px 5px rgba(119, 119, 118, 0.2);
@@ -13,18 +13,25 @@
 
 @media (max-width: 900px) {
   .main{
-    height: 90vh;
-    border-left: 4px solid #809bce;
-    border-bottom: 4px solid #809bce;
+    max-height: 100vh;
+    border-left: 2px solid #ddbdd5;
+    border-bottom: 2px solid #ddbdd5;
+    border-right: 2px solid #ddbdd5;
+  }
+}
+
+@media (max-width:768px){
+  .main{
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
   }
 }
 
 /* 슬라이드 */
 .slide{
-  width: 95%;
-  height: 95%;
-  position: absolute;
-  right: 0;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .mySwiper {
@@ -48,11 +55,11 @@
 }
 
 .swiper-button-prev{
-  left: 40px !important;
+  left: 15px !important;
 }
 
 .swiper-button-next{
-  right: 40px !important;
+  right: 15px !important;
 }
 
 .swiper-button-prev:hover,
@@ -63,15 +70,25 @@
 
 /* swiper-mobile */
 @media (max-width:900px){
+  .mySwiper {
+    max-height:540px;
+  }
+
+  .slide{
+    max-width: 700px;
+    max-height: 90%;
+  }
+
   .swiper-button-prev,
   .swiper-button-next{
     display: none !important;
   }
+}
 
-  .swiper-pagination {
-    height: 125px;
+@media (max-width:768px){
+  .swiper-pagination{
+    height: 150px;
   }
-
 }
 
 /* main */
@@ -97,7 +114,7 @@ p{
 
 .main_word{
   background: linear-gradient(to right, transparent 50%, #ddbdd5 50%) ;
-  background-size: 200.1%;
+  background-size: 200%;
   font-weight: 700;
   transition: .35s;
 }
@@ -131,13 +148,13 @@ p{
 
 @media (max-width:900px){
   .main_text{
-    height: 17em;
+    height: 14em;
   }
 
   p{
     width: 550px;
     margin:0 auto;
-    padding: 70px 0;
+    padding: 40px 0;
     font-size: 20px;
     line-height: 1.2;
     border-bottom: 1px solid #ddbdd5;
@@ -171,6 +188,16 @@ p{
 
   .last_checkbox .checkbox_item{
     width: 30%;
+  }
+}
+
+@media (max-width:768px){
+  p{
+    width: 450px;
+  }
+
+  .checkbox img{
+    margin: 0  10px;
   }
 }
 

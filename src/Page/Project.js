@@ -1,33 +1,28 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import disney from "../image/disney-website.png";
-import starbucks from "../image/starbucks-website.png";
 import video from "../image/youtube.png";
-import ipad from "../image/ipad-website.png";
-import todolist from "../image/todolist-app.png";
-import weather from "../image/weather-app.png";
+import site from "../image/chatty.png";
+import apple from "../image/ipad-website.png";
 import shopping from "../image/shopping-website.png";
 import movie from "../image/movie-website.png";
 import portfolio from '../image/portfolio.png'
 import guest from '../image/guest_book.png';
-import Coffee from "../Component/Detail/Coffee";
+
 import Youtube from "../Component/Detail/youtube";
-import Iphone from "../Component/Detail/Iphone";
-import Tomorrow from "../Component/Detail/Tomorrow";
 import Fashion from "../Component/Detail/Fashion";
-import Sunny from '../Component/Detail/Sunny'
+import Iphone from '../Component/Detail/Iphone'
 import Resume from "../Component/Detail/Resume";
 import Airbnb from "../Component/Detail/Airbnb";
 import Movie_netflix from "../Component/Detail/Movie_netflix";
 import Movie_disney from "../Component/Detail/Movie_disney";
+import Chat from "../Component/Detail/Chat";
 
 
 const Project = () => {
-  const [coffee,setCoffee]=useState(false)
   const [youtube,setYoutube]=useState(false)
-  const [iphone,setIphone]=useState(false)
-  const [tomorrow,setTomorrow]=useState(false)
-  const [sunny,setSunny]=useState(false)
+  const [chatty,setChatty]=useState(false)
+  const [ipad,setIpad]=useState(false)
   const [fashion,setFashion]=useState(false)
   const [disneymovie,setDisneyMovie]=useState(false)
   const [netflix,setNetflix]=useState(false)
@@ -37,46 +32,25 @@ const Project = () => {
 
   return (
     <Container>
-      <Item>
-        <img alt="starbucks" src={starbucks} />
-        <Title className='item'>
-          <h3>Starbucks-Website</h3>
-          <button onClick={()=>setCoffee(!coffee)}>Click</button>
-        </Title>
-      </Item>
-
-      {coffee?<Coffee setOpenModal={setCoffee}/>:''}
-
-      
-      <Item>
-        <img alt="ipad" src={ipad} />
-        <Title className='item'>
-          <h3>Ipad-Website</h3>
-          <button onClick={()=>setIphone(!iphone)}>Click</button>
-        </Title>
-      </Item>
-
-      {iphone?<Iphone setOpenModal={setIphone}/>:''}
-
       <Item >
-        <img alt="todolist" src={todolist} />
+        <img alt="ipad" src={apple} />
         <Title className='item'>
-          <h3>TodoList-App</h3>
-          <button onClick={()=>setTomorrow(!tomorrow)}>Click</button>
+          <h3>Apple-Website</h3>
+          <button onClick={()=>setIpad(!ipad)}>Click</button>
         </Title>
       </Item>
 
-      {tomorrow?<Tomorrow setOpenModal={setTomorrow}/>:''}
+      {ipad?<Iphone setOpenModal={setIpad}/>:''}
 
-      <Item >
-        <img alt="weather" src={weather} />
+      <Item>
+        <img alt="chatty" src={site} />
         <Title className='item'>
-          <h3>Weather-App</h3>
-          <button onClick={()=>setSunny(!sunny)}>Click</button>
+          <h3>Chatty-Website</h3>
+          <button onClick={()=>setChatty(!chatty)}>Click</button>
         </Title>
       </Item>
 
-      {sunny?<Sunny setOpenModal={setSunny}/>:''}
+      {chatty?<Chat setOpenModal={setChatty}/>:''}
 
       <Item>
         <img alt="shopping" src={shopping} />
@@ -147,19 +121,25 @@ export default Project;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 170px;
-  width: 1100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 165px;
+  width: 1000px;
   margin: 0 auto 0;
 
   @media (max-width:900px){
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 117px;
-    width: 600px;
+    grid-auto-rows: 135px;
+    width:90%;
     margin: 0 auto 0;
     border-right: 2px solid #ddbdd58a;
     border-left: 2px solid #ddbdd58a;
-    
+  }
+
+
+  @media (max-width:760px){
+    width:90%;
+    border-right: none;
+    border-left: none;
   }
 `;
 
@@ -170,7 +150,7 @@ const Item = styled.div`
 
   img {
     width: 250px;
-    height:160px;
+    height:157px;
     position: absolute;
   }
 
@@ -204,7 +184,19 @@ const Item = styled.div`
       height: 110px;
       margin: 5px auto;
     }
+  }
 
+  @media (max-width: 768px) {
+    width:100%;
+
+    .item{
+      opacity:1;
+      visibility: visible;
+      position: relative;
+      width: 220px;
+      height: 110px;
+      margin: 5px auto;
+    }
   }
 `;
 
@@ -231,7 +223,7 @@ const Title = styled.div`
     border:none;
     background:linear-gradient(to right, transparent 50%, white 50%);
     left:0;
-    background-size:200%;
+    background-size:201%;
     margin-top:10px;
     padding:10px;
     transition:.2s;
@@ -244,7 +236,6 @@ const Title = styled.div`
 
   
     @media (max-width:900px){
-
       h3{
         font-size:20px;
         border-bottom:2px solid white;

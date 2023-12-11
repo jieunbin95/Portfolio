@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark,faCheck } from '@fortawesome/free-solid-svg-icons'
 import useOnClickOutside from '../../hook/useOnClickOutside'
-import list from '../../image/todolist-app.png'
+import site from '../../image/chatty.png'
 import { Col, Row } from 'react-bootstrap'
 
-const Tomorrow=({setOpenModal}) => {
+const Chat = ({setOpenModal}) => {
   const ref=useRef(null)
   useOnClickOutside(ref,()=>{
     setOpenModal(false)
@@ -19,8 +19,8 @@ const Tomorrow=({setOpenModal}) => {
       </div>
       <Row>  
         <Col>
-        <h3>TodoList-App</h3>
-        <img alt='list' src={list}/>
+        <h3>Chatty-Website</h3>
+        <img alt='chatty' src={site}/>
         </Col>
 
         <Col className='detail_text'>
@@ -29,27 +29,30 @@ const Tomorrow=({setOpenModal}) => {
           Description
         </div>
         <p>
-        Javascript를 이용해 아이템을 생성,삭제,상태를 표시하는 웹사이트를 만들었습니다.
+          가상으로 만들어 본 Chatty 웹사이트입니다. 
+          <br/>홈페이지를 직접 설계해보고,
+          TailwindCSS를 처음으로 사용해보며 차별적인 유용성을 느낄 수 있었습니다.
+          또한, 편리성과 애니메이션 효과를 위해 React-Scroll를 사용하였습니다.
         </p>
         <div className='detail_skill'>
           <FontAwesomeIcon icon={faCheck}/>
           Use Skill
         </div>
-        <p className='skill'> HTML  <span style={{margin:'0 30px 0'}}>CSS</span> Javascript </p>
-        <div><FontAwesomeIcon icon={faCheck} /><a href='https://funny-dolphin-d19c57.netlify.app/'>Demo-Site</a></div>
-        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/To-Do-List'>Source Code</a></div>
+        <p className='skill'> React  <span style={{margin:'0 30px 0'}}>CSS(tailwind)</span></p>
+        <div><FontAwesomeIcon icon={faCheck} /><a href='https://bejewelled-pony-720428.netlify.app/'>Demo-Site</a></div>
+        <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/website-chatty'>Source Code</a></div>
         </Col>  
       </Row>
     </Container>
   )
 }
 
-export default Tomorrow
+export default Chat;
 
 const Container=styled.div`
   position: absolute;
   top:0;
-  width: 1100px;
+  width: 990px;
   background-color:white;
   height:540px;
   z-index:1;
@@ -84,7 +87,7 @@ const Container=styled.div`
 
   img{
     width:500px;
-    height:90%;
+    height:70%;
     margin:20px 10px 0;
   }
 
@@ -97,8 +100,10 @@ const Container=styled.div`
     p{
       width:90%;
       height:40%;
-      border-top:1px solid #ddbdd5;
       font-size:16px;
+      .point{
+        color:red;
+      }
     }
 
     .skill{
@@ -130,9 +135,9 @@ const Container=styled.div`
   @media (max-width:900px){
     position: absolute;
     top:0;
-    width: 580px;
+    width: 89%;
     background-color:white;
-    height:600px;
+    height:540px;
 
     .close-btn{
       top:20px;
@@ -153,7 +158,7 @@ const Container=styled.div`
     }
 
     .detail_text{
-      height: 600px;
+      height: 500px;
       position: absolute;
       width: 90%;
       left: 10px;

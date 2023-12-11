@@ -30,13 +30,13 @@ const Youtube=({setOpenModal}) => {
         </div>
         <p>
         Vite툴을 이용해 만든 Youtube클론 코딩입니다. mainPage, VideoPage, searchVideoPage로 구성되어있으며, 
-        axios, dayjs, react-icons, react-router-dom, tooltip, react-youtube, sass를 사용하였습니다
+        axios, dayjs, react-icons, react-router-dom, tooltip, react-youtube, SASS(SCSS)를 사용하였습니다.
         </p>
         <div className='detail_skill'>
           <FontAwesomeIcon icon={faCheck}/>
           Use Skill
         </div>
-        <p className='skill'> Vite <span style={{margin:'0 30px 0'}}>SCSS</span> </p>
+        <p className='skill'> Vite <span style={{margin:'0 30px 0'}}>SASS(SCSS)</span> </p>
         <div><FontAwesomeIcon icon={faCheck} /><a href='https://clinquant-crumble-647cd3.netlify.app/'>Demo-Site</a></div>
         <div><FontAwesomeIcon icon={faCheck}/><a href='https://github.com/jieunbin95/react-sass-youtube'>Source Code</a></div>
         </Col>  
@@ -50,7 +50,7 @@ export default Youtube
 const Container=styled.div`
   position: absolute;
   top:0;
-  width: 1100px;
+  width: 990px;
   background-color:white;
   height:540px;
   z-index:1;
@@ -131,9 +131,8 @@ const Container=styled.div`
   @media (max-width:900px){
     position: absolute;
     top:0;
-    width: 580px;
+    width: 89%;
     background-color:white;
-    height:600px;
 
     .close-btn{
       top:20px;

@@ -49,7 +49,7 @@ export default Resume
 const Container=styled.div`
   position: absolute;
   top:0;
-  width: 1100px;
+  width: 990px;
   background-color:white;
   height:540px;
   z-index:1;
@@ -130,9 +130,9 @@ const Container=styled.div`
   @media (max-width:900px){
     position: absolute;
     top:0;
-    width: 580px;
+    width: 89%;
     background-color:white;
-    height:600px;
+    height:540px;
 
     .close-btn{
       top:20px;
@@ -153,7 +153,7 @@ const Container=styled.div`
     }
 
     .detail_text{
-      height: 600px;
+      height: 500px;
       position: absolute;
       width: 90%;
       left: 10px;

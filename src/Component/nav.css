@@ -1,4 +1,4 @@
-/* 서브버튼 */
+/* 서브버튼
 .sub_menu{
   width: 40px;
   margin-left: 20px;
@@ -14,34 +14,7 @@
   color: black;
   font-family: 'DM Serif Display', serif;
   font-weight: 700;
-}
-
-.about,
-.home,
-.portfolio{
-  margin-left: 70px;
-  margin-right: 40px;
-  cursor: pointer;
-  transition: .5s;
-  font-size: 20px;
-}
-
-.about:hover,
-.home:hover,
-.portfolio:hover{
-  border-bottom: 2px solid #736b9292;
-  border-top: 2px solid #736b9292;
-}
-
-@media (max-width: 900px) {
-  .about,
-  .home,
-  .portfolio{
-    margin-right: 90px;
-  }
-
-} 
-
+} */
 
 /* 타이틀 */
 .nav-section{
@@ -66,7 +39,7 @@ h1{
 .name{
   font-family: 'DM Serif Display', serif;
   background: linear-gradient(to right, transparent 50%, #ddbdd5 50%) ;
-  background-size: 200%;
+  background-size: 201%;
   font-weight: 700;
   transition: .35s;
 }
@@ -81,7 +54,15 @@ h1{
 
 @media (max-width:900px){
   .nav-section{
-    border-left: 4px solid #809bce;
+    border-left: 2px solid #ddbdd5;
+    border-right: 2px solid #ddbdd5;
+  }
+}
+
+@media (max-width:768px){
+  .nav-section{
+    border-left: none;
+    border-right: none;
   }
 }
 
